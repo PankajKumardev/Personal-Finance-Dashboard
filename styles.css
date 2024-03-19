@@ -1,0 +1,323 @@
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Default font and text color */
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #fff; /* Change text color to white */
+  background-color: #161616; /* Dark background color */
+}
+
+/* Header styling */
+header {
+  background-color: #3dcfd3;
+  color: #070606;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Navigation styling */
+nav {
+  background-color: #161616;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-left: 100px;
+  margin-bottom: -30px;
+  margin-top: 10px;
+}
+
+ul {
+  margin-bottom: 40px;
+  font-size: larger;  
+}
+
+nav ul li {
+  position: relative;
+  display: inline-block; /* Display items horizontally */
+}
+
+nav ul li a {
+  display: block;
+  padding: 14px 20px;
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li:hover > ul {
+  display: block;
+}
+
+nav ul li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #161616;
+  min-width: 160px;
+}
+
+nav ul li ul li {
+  width: 100%;
+}
+
+nav ul li ul li a {
+  display: block;
+  padding: 10px 20px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+nav ul li ul li a:hover {
+  background-color: #3dcfd3;
+}
+
+/* Main content area */
+main {
+  padding: 20px;
+}
+
+/* Section styling */
+.section {
+  margin-bottom: 40px;
+  margin-top: 50px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.containerborder{
+  margin-left: 200px;
+  margin-right: 200px;
+  padding: 10px;
+  padding-left: 0%;
+  padding-right: 0%;
+  border-top: 1px solid #ccc;
+  background-color: #161616;
+  margin-top: 12px;
+  margin-bottom: 100px;
+  
+}
+.container ul {
+  margin-left: -100px;
+  margin-bottom: 10px;
+  font-size: larger;
+  margin-right: -100px;
+}
+
+/* Headings and paragraphs */
+h1, h2, h3 {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #3dcfd3;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* Hover effect */
+a:hover {
+  color: #3dcfd3;
+}
+
+/* Form styling */
+form {
+  margin-bottom: 20px;
+}
+
+label {
+  display: inline-block;
+  width: 100px;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="date"],
+button {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #3dcfd3;
+  color: #070606;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2aa9ba;
+}
+
+/* List styling */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* Add box styling for expenses */
+.expense-box {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9; /* Change to light gray */
+}
+
+/* Add styling for expense items */
+.expense-item {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff; /* Change to white */
+  color: #000; /* Change text color to black */
+}
+
+/* Color boxes for categories */
+.color-box {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+/* Hover effect for expense items */  
+.expense-item:hover {
+  background-color: #3dcfd3; /* Change to #3dcfd3 on hover */
+  color: #161616; /* Change text color to white on hover */
+}
+
+/* Adjust margin and padding for form elements */
+form label,
+form input,
+form select {
+  display: block;
+  margin-bottom: 10px;
+  padding: 5px; /* Adjusted padding */
+}
+
+/* Add box styling for budgets */
+.budget-item {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9; /* Light gray background */
+  color: #333; /* Dark text color */
+}
+
+/* Hover effect for budget items */
+.budget-item:hover {
+  background-color: #3dcfd3; /* Change to #3dcfd3 on hover */
+  color: #161616; /* Change text color to white on hover */
+}
+
+/* Show custom category input when selected */
+#custom-label,
+#custom-category {
+  display: none;
+}
+
+#category[value="Custom"] ~ #custom-label,
+#category[value="Custom"] ~ #custom-category {
+  display: block;
+}
+
+/* Add custom category input when selected */
+#custom-category {
+  display: none;
+}
+
+#category[value="Custom"] ~ #custom-category {
+  display: block;
+}
+ .containerforgoal{
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #161616;
+}
+.containergoal{
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #161616;
+}
+/* Add rupees symbol styling */
+.currency {
+  font-weight: bold;
+}
+
+/* Improve container layout */
+.containerforgoal {
+  margin-bottom: 20px;
+}
+
+.containergoal {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9; /* Light gray background */
+}
+
+/* Improve form styling */
+#goal-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+#goal-form input[type="text"],
+#goal-form input[type="number"],
+#goal-form input[type="date"] {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+#goal-form button {
+  background-color: #3dcfd3;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+#goal-form button:hover {
+  background-color: #2aa9ba;
+}
+
+/* Improve goal list item styling */
+#goals-list .budget-item {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #000;
+}

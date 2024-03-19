@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expense Tracking</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Expense Tracking</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="expenses.html">Expense Tracking</a></li>
+      <li><a href="budgets.html">Budget Setting</a></li>
+      <li><a href="goals.html">Financial Goal Management</a></li>
+      <li><a href="visualization.html">Visualization</a></li>
+      <li><a href="chart.html">Trading Chart</a></li>
+    </ul>
+  </nav>
+  <main>
+    <div class="expense-box" style="background-color: #161616;">
+      <h2 class="food-header">Add Expense</h2>
+      <form id="expense-form" class="expense-form" style="background-color: #161616;">
+        <label for="amount">Amount (in ₹):</label>
+        <input type="number" id="amount" name="amount" required><br>
+        <label for="category">Category:</label>
+        <select id="category" name="category" required>
+          <option value="" disabled selected>Select Category</option>
+          <option class="food-header" value="Food">Food</option>
+          <option class="transportation-header" value="Transportation">Transportation</option>
+          <option class="utilities-header" value="Utilities">Utilities</option>
+          <option class="entertainment-header" value="Entertainment">Entertainment</option>
+          <option class="custom-header" value="Custom">Custom</option>
+        </select><br>
+        <input type="text" id="custom-category" name="custom-category" placeholder="Enter Custom Category" style="display: none;" ><br>
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required><br>
+        <button type="submit">Add Expense</button>
+      </form>
+    </div>
+    
+    <div class="expense-box" style="background-color: #161616;">
+      <h2 class="food-header">Expenses</h2>
+      <div id="expenses-list" class="expense-list">
+        <!-- Expenses will be dynamically added here -->
+      </div>
+    </div>
+  </main>
+  <script src="expenses.js"></script>
+</body>
+</html>

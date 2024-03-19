@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visualization</title>
+  <!-- Include Chart.js library -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Visualization</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="expenses.html">Expense Tracking</a></li>
+      <li><a href="budgets.html">Budget Setting</a></li>
+      <li><a href="goals.html">Financial Goal Management</a></li>
+      <li><a href="visualization.html">Visualization</a></li>
+      <li><a href="chart.html">Trading Chart</a></li>
+    </ul>
+  </nav>
+  <main class="chart-container">
+    <div class="chart">
+      <h2>Expense Breakdown</h2>
+      <!-- Set width and height attributes for larger size -->
+      <canvas id="expense-chart" width="400" height="300"></canvas>
+    </div>
+    <div class="chart">
+      <h2>Budget Comparison</h2>
+      <!-- Set width and height attributes for larger size -->
+      <canvas id="budget-chart" width="400" height="300"></canvas>
+    </div>
+    <div class="chart">
+      <h2>Goal Progress</h2>
+      <!-- Set width and height attributes for larger size -->
+      <canvas id="goal-chart" width="400" height="300"></canvas>
+    </div>
+  </main>
+  <!-- Include your custom JavaScript file -->
+  <script src="visualization.js"></script>
+</body>
+</html>
